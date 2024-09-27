@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="website icon" href="src/img/icon.png">
+    <title>Clima</title>
+</head>
+<body>
+    <div id="container">
+        <form id="search">
+            <i id="location-icon" class="fa-solid fa-location-dot"></i>
+            <input 
+                type="search"
+                name="city-name"
+                id="city-name"
+                placeholder="Buscar cidade"
+            >
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <div id="weather">
+            <h1 id="title">Araci/Ba, BR</h1>
+
+            <div id="img">
+                <img id="sun" src="/src/sun.png" alt="Sol">
+            </div>
+
+            <div id="infos">
+                <div id="temp">
+                    <div id="temp-geral">
+                        <p id="temp-value">
+                             
+                        </p>
+                        <p id="temp-desc">
+                            Ensolarado
+                        </p>
+                    </div>
+                    <div id="other-infos">
+                        <div class="info">
+                            <i id="max-icon" class="fa-solid fa-temperature-arrow-up"></i>
+                            <div class="info-content">
+                                <h2>Máxima </h2>
+                                <p id="temp-max">
+                                    
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <i id="min-icon" class="fa-solid fa-temperature-arrow-down"></i>
+                            <div class="info-content">
+                                <h2>Minima</h2>
+                                <p id="temp-min">
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="alert"></div>
+    </div>
+
+    <script src="src/js/scripts.js"></script>
+</body>
+</html>
